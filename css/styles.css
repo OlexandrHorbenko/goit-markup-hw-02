@@ -1,7 +1,7 @@
 body {
   font-family: "roboto", sans-serif;
-  color: #757575;
   background-color: var(--gray-white);
+  color: var(--maine_color);
 }
 
 .list {
@@ -13,6 +13,7 @@ body {
 }
 
 :root {
+  --maine_color: #757575;
   --gray-black-logo: #000000;
   --gray-blue: #2196f3;
   --gray-black: #212121;
@@ -104,31 +105,37 @@ body {
 
 .slogan-btn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 0;
+  border-color: transparent;
   border-radius: 4px;
   background-color: var(--gray-blue);
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
+  line-height: calc(30 / 16);
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--gray-white);
+  cursor: pointer;
 }
 
 .slogan-btn:hover,
 .slogan-btn:focus {
   background-color: var(--gray-blue-button);
 }
-
-.pointer {
-  cursor: pointer;
-}
-
 /* !!!!!!!!!!SECTION-2 !!!!!!!!!!*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .experience-title {
   font-weight: 700;
   font-size: 14px;
@@ -139,7 +146,6 @@ body {
 }
 
 .experience-description {
-  font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -186,7 +192,6 @@ body {
 }
 
 .team-hero-prof {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -209,7 +214,6 @@ body {
 }
 .footer-address {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -221,7 +225,6 @@ body {
 }
 .footer-list {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -237,8 +240,9 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  font-family: inherit;
   background-color: var(--team-background);
-  border: 0;
+  border-color: transparent;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -257,9 +261,7 @@ body {
 }
 /*!!!!!!!!!!!!!!! IMAGES!!!!!!!!!!!!! */
 .hero-link {
-  box-sizing: border-box;
   background-color: var(--gray-white);
-  border: 1px solid var(--color-box);
 }
 .hero-title {
   font-weight: 700;
@@ -269,7 +271,6 @@ body {
   color: var(--gray-black);
 }
 .hero-prof {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
