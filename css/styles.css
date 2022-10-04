@@ -249,6 +249,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--gray-black);
+  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -274,4 +275,5 @@ body {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
+  color: var(--maine_color);
 }
